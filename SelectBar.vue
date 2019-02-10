@@ -42,7 +42,7 @@ export default {
   methods: {
     chooseOption(optionValue) {
       this.activeOption = optionValue.value;
-      this.$emit('chooseProvider', optionValue.id);
+      this.$emit('chooseOption', optionValue.id);
       this.showOptionsMenu = false;
     },
   },
