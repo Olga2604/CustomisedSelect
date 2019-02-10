@@ -3,7 +3,7 @@
     <h1>This is an awesome select!</h1>
     <select-bar :selectPlaceholder="'Choose a fruit'"
                 :selectOptions="getAllFruits"
-                @chooseFruit="getChosenFruit"/>
+                @chooseOption="getChosenOption"/>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   components: { SelectBar },
   ...
   methods: {
-    getChosenProvider(value) {
+    getChosenOption(value) {
       return value;
     },
   },
